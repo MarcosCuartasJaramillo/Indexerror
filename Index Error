@@ -1,0 +1,13 @@
+I = [1,3,5,7,9]
+
+try:
+  idx = int(input('Enter index: '))
+  print(I[idx])
+except IndexError:
+  print('Index value out of bounds')
+except ValueError:
+  print('Index ahould contain only integers')
+else:
+  print('All good')
+finally:
+  print('This will be displayed always')
